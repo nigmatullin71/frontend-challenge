@@ -11,7 +11,7 @@ const App: React.FC = () => {
     <FavouritesProvider>
         <Tabs></Tabs> 
         <Routes>
-          <Route path="/" element={<MainPage />} />
+          <Route path="./" element={<MainPage />} />
           <Route path="/favourites" element={<FavouritesPage />} />
         </Routes>
     </FavouritesProvider>
