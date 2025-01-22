@@ -11,7 +11,7 @@ const requestOptions: RequestInit = {
   headers: headers,
 };
 
-export const fetchCats = async (page: number = 0, limit: number = 100) => {
+export const fetchCats = async (page: number = 0, limit: number = 10) => {
   const url = `${BASE_URL}/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=${page}&limit=${limit}`;
   
   try {
