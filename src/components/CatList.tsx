@@ -16,7 +16,7 @@ const CatList: React.FC = () => {
     const loadCats = async () => {
       setLoading(true);
       try {
-        const data = await fetchCats(0, 100); 
+        const data = await fetchCats(0, 10); 
         setCats(data);
       } catch (err) {
         setError("Не удалось загрузить котиков");
